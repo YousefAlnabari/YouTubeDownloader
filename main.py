@@ -38,7 +38,7 @@ if download_type == 'single':
         print(f"Audio download quality: {audio_stream.abr}")
         file_size = round((audio_stream.filesize / 1000000), 2)
         print(f"File Size: {file_size} MB")
-        audio_stream.download()
+        audio_stream.download(filename=f"{title}.mp3")
         print("\n")
     else:
         print("Invalid media type. Please enter 'mp4' or 'mp3'.")
@@ -79,7 +79,7 @@ elif download_type == 'playlist':
             print(f"Audio download quality: {audio_stream.abr}")
             file_size = round((audio_stream.filesize / 1000000), 2)
             print(f"File Size: {file_size} MB")
-            audio_stream.download()
+            audio_stream.download(filename=f"{title}.mp3")
             remaining_video_count += 1
             print("\n")
         else:
