@@ -95,8 +95,8 @@ elif download_type == 'playlist':
             print("\n")
         else:
             print("Invalid media type. Please enter 'mp4' or 'mp3'.")
-
-        print(f"Remaining: {remaining_video_count} out of {video_count}")
+        if remaining_video_count <= video_count:
+            print(f"Remaining: {remaining_video_count} out of {video_count}")
 
 else:
     print("Invalid download type. Please enter 'single' or 'playlist'.")
