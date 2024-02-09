@@ -1,5 +1,5 @@
 # YouTube Downloader
-| YouTube Downloader V.1.1 |
+| YouTube Downloader V.1.2 |
 <br>
 You can easily install Playlists and Videos from YouTube using this script! 🎉
 <br>
@@ -20,3 +20,6 @@ Enjoy the flexibility and convenience! 🚀
   pip3 install -r requirements.txt
   python3 main.py
 ```
+
+## License
+MIT
